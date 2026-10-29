@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import LoginPage from './LoginPage.jsx';
+import waterImage from './assets/images/water_surface_clean_1792955484968.jpg';
 import {
   Droplets,
   AlertCircle,
@@ -218,12 +219,12 @@ function WaterQualityDashboard() {
           
           {/* Water Image Header Banner */}
           <div className="relative h-48 sm:h-56 w-full overflow-hidden bg-sky-200">
-            <img
-              src="/src/assets/images/water_surface_clean_1792955484968.jpg"
-              alt="Clean natural freshwater surface with ripples"
-              className="w-full h-full object-cover object-center"
-              referrerPolicy="no-referrer"
-            />
+  <img
+    src={waterImage}
+    alt="Clean natural freshwater surface with ripples"
+    className="w-full h-full object-cover object-center"
+  />
+</div>
             {/* Soft sky-blue gradient contrast overlay */}
             <div className="absolute inset-0 bg-gradient-to-t from-sky-950/80 via-sky-900/40 to-sky-800/10 flex flex-col justify-end p-6 sm:p-8 text-white">
               <div className="inline-flex items-center gap-1.5 text-sky-300 text-xs font-semibold uppercase tracking-wider mb-1.5">
