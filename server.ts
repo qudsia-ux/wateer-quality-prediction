@@ -10,7 +10,7 @@ const __dirname = path.dirname(__filename);
 const app = express();
 const PORT = Number(process.env.PORT) || 3000;
 const FLASK_PORT = 5000;
-const FLASK_URL = `http://127.0.0.1:${FLASK_PORT}`;
+const FLASK_URL = process.env.FLASK_URL || `http://127.0.0.1:${FLASK_PORT}`;
 
 // Launch Python Flask process if not already running
 let flaskProcess: any = null;
@@ -37,7 +37,9 @@ function ensureFlaskRunning() {
     });
 }
 
-ensureFlaskRunning();
+if (!process.env.FLASK_URL) {
+  ensureFlaskRunning();
+}
 
 app.use(express.json());
 
