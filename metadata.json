@@ -1,0 +1,6 @@
+{
+  "name": "Water Quality Prediction System",
+  "description": "Educational water quality assessment and machine learning classification tool using physicochemical water parameters.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

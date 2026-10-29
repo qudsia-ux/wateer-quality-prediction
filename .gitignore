@@ -1,0 +1,23 @@
+# Node.js
+node_modules/
+
+# Build files
+build/
+dist/
+coverage/
+
+# Python virtual environment
+backend/venv/
+venv/
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Environment variables
+.env*
+!.env.example
+
+# Other
+.DS_Store
+*.log
